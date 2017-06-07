@@ -11,7 +11,7 @@ Object.defineProperty(task, 'toString', {
   },
   writable: false,
   enumerable: false,
-  configurable: true
+  configurable: false
 });
 
 /*task.toString = function() {
@@ -27,13 +27,13 @@ console.log(Object.keys(task));
 //inheritance
 var urgentTask = Object.create(task);
 
-Object.defineProperty(task, 'toString', {
+Object.defineProperty(urgentTask, 'toString', {
   value: function() {
     return this.title + ' is urgent';
   },
   writable: false,
   enumerable: false,
-  configurable: true
+  configurable: false
 });
 
 console.log(urgentTask.toString());
