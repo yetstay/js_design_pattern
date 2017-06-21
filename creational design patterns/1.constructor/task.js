@@ -1,5 +1,6 @@
 'use strict'
 
+// traditional way of creating an object 
 var task = Object.create(Object.prototype);
 
 task.title = 'My Task';

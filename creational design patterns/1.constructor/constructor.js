@@ -1,3 +1,4 @@
+// creating an object using constructor pattern and prototype
 var Task = function(name) {
 	this.name = name;
 	this.completed = false;

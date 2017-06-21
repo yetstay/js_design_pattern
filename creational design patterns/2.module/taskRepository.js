@@ -4,7 +4,7 @@ var repo = function () {
 	// can establish db connection, etc all in here and not in the calling functions -> modular code!
 	var db = {};
 
-	// all the db manipulation code is encapsulated below here
+	// all the db manipulation code is encapsulated below here	
 	/*return {
 		get: function(id) {
 			console.log('Getting task' + id);
@@ -18,7 +18,7 @@ var repo = function () {
 
 	}*/
 
-	//releaving module pattern below
+	//using "revealing module pattern" below. doing the same thing as above
 	var getTask = function(id) {
 		console.log('Getting task' + id);
 		return {

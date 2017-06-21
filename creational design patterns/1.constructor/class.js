@@ -1,5 +1,7 @@
 'use strict'
 
+// this is separate from main.js. executing this in node.js will result in the same as main
+// creating an object using class
 class Task {
 	constructor(name) {
 		this.name = name;
